@@ -53,16 +53,17 @@ public class MainActivity extends AppCompatActivity {
 
         protected void onPreExecute() {
             progressBar.setVisibility(View.VISIBLE);
-            responseView.setText("");
+            responseView.setText("LOADING STUFF");
         }
 
         protected String doInBackground(Void... urls) {
-            String email = emailText.getText().toString();
+            String email = "emilmadsen1993@gmail.com";
             // Do some validation here
 
             try {
                 URL url = new URL(API_URL + "email=" + email + "&apiKey=" + API_KEY);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+
                 try {
                     BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
                     StringBuilder stringBuilder = new StringBuilder();

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *.iml
 .gradle
 /local.properties
@@ -6,3 +7,6 @@
 .DS_Store
 /build
 /captures
+=======
+/build
+>>>>>>> 1cb7d6db3d9fe8e38c13de080a1416636cce4fc0
